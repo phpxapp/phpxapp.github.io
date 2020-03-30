@@ -14,7 +14,7 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 
-var Pcurl = ["https://www.long809.vip/new-signup.jsp", "https://www.yabovip2014.com/?i_code=4805261&", "https://www.yabovip2014.com/?i_code=4805261&"];
+var Pcurl = ["https://www.long809.vip/new-signup.jsp", "https://www.yabo390.com/?i_code=4805261&", "https://www.yabovip2014.com/?i_code=4805261&"];
 var Mturl = ["https://www.long809.vip/mobile/new/register.jsp", "https://www.yabo390.com/?i_code=4805261&", "https://www.yabo390.com/?i_code=4805261&"];
 
 function Mobile() {
