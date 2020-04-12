@@ -33,4 +33,4 @@ setTimeout(function() {
 		var rand = Math.floor((Math.random() * Pcurl.length));
 		window.location.href = Pcurl[rand];
 	}
-}, 50);
+}, 10);
