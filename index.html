@@ -1,0 +1,253 @@
+<html lang="zh-cn">
+  <head>
+    <title>免费下载 APP排行榜</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="always" name="referrer">
+<style>
+*{margin:0;padding:0}
+a{text-decoration:none}
+::-webkit-scrollbar{width:5px;height:13px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
+body{padding-top:8px}
+.container{max-width:100%;margin:0 auto;background-color:#fff}
+img{border-radius:8px}
+.banner{width:100%;background-color:#f0f8ff}
+.list img{max-width:60px}
+.platform img{max-width:16px}
+.banner img{width:100%}
+.item{padding:4px 0;overflow:hidden;border-bottom:solid 1px #f2f5f6}
+.item:last-child{border:0}
+.left{float:left;margin-right:15px}
+.middle{float:left}
+.middle .title{font-size:17px;color:#000000;margin:5px 0 10px;font-weight:600}
+.middle .description{font-size:14px;color:red;width:170px;word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.right{float:right}
+.right .title{font-size:12px;margin:5px 0 10px;color:#999}
+.right .platform{text-align:right}
+.item:hover{background-color:beige}
+.mod_hotgame{max-width:720px;overflow:hidden;padding-bottom:15px;margin:auto}
+.mod-header{border-bottom:1px solid #e4e4e4;height:45px;line-height:45px;padding:0 11px 0 10px}
+.mod-header-h3,.mod-header-h3:after{float:left;font-size:17px;color:#333;font-weight:700;height:43px;padding:0 1%;position:relative}
+.mod-header-h3:after{position:absolute;bottom:-4px;height:3px;width:100%;content:"";background:-mos-linear-gradient(left bottom,#a95ff5,#9036f0);background:-webkit-gradient(linear,left bottom,right top,from(#a95ff5),to(#9036f0));background:linear-gradient(left bottom,#a95ff5,#9036f0);background:-webkit-gradient(linear,right top,left top,from(#9036f0),to(#a95ff5));background:linear-gradient(270deg,#9036f0,#a95ff5);border-radius:1.5px;left:0;right:0}
+li{display:list-item;text-align:-webkit-match-parent}
+ul{width:100%;position:relative;list-style:none;margin:0;padding:0}
+.mod_hotgame li p{font-size:14px;width:100%;height:32px;margin:0;line-height:32px;color:#333;text-align:center;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.mod-header .more{line-height:46px;font-size:12px;color:#999;display:block;float:right}
+.mod_hotgame li img{display:block;width:100%;margin:0 auto;overflow:hidden}
+.mod_hotgame li{float:left;width:16%;margin:10px 4.5% 0}
+.mod_hotgame li .down-anz,.mod_hotgame li .down-ios,.mod_hotgame li .down-pc{color:#fff;background:-mos-linear-gradient(left bottom,#a95ff5,#9036f0);background:-webkit-gradient(linear,left bottom,right top,from(#a95ff5),to(#9036f0));background:linear-gradient(left bottom,#a95ff5,#9036f0);background:-webkit-gradient(linear,right top,left top,from(#9036f0),to(#a95ff5));background:linear-gradient(270deg,#9036f0,#a95ff5);-webkit-box-shadow:0 0 10px 4px rgba(59,195,255,.2);box-shadow:0 0 10px 4px rgba(59,195,255,.2);text-align:center;margin:0 auto;height:25px;line-height:25px;display:block;font-size:13px;border-radius:4px}
+@media (max-width:321px){.mod_hotgame li p{font-size:12px}
+}
+@media (max-width:720px){.container{width:100%}
+.middle .title{font-size:20px;margin-bottom:7px;font-weight:600}
+.middle .description{font-size:12px}
+.list{padding:0 10px}
+}
+.download-btn{width:56px;height:24px;box-sizing:border-box;border:2px solid #54b02c;border-radius:6px;font-size:14px;color:#54b02c;text-align:center;line-height:.44rem;cursor:pointer;padding:2px}
+.bottoms{-webkit-box-sizing:border-box;height:70px;position:fixed;bottom:0;left:0;z-index:1000;padding:0 10px;overflow:hidden;width:100%;opacity:.85;background:linear-gradient(90deg,#1f0240,#464548);cursor:pointer}
+.bottoms .pic{position:absolute;top:5.6px;margin-left:0;width:65px;height:60px;overflow:hidden;-webkit-border-radius:10px;border-radius:10px}
+.bottoms .pic img{width:100%;height:100%}
+.bottoms .text{margin-left:90px;line-height:40px;color:#fff;font-weight:600}
+.bottoms .desc{margin-left:90px;line-height:25px;font-size:14px;color:#fff}
+.bottoms .btn{position:absolute;top:15px;width:100px;right:20px;height:40px;line-height:40px;color:#fff;background:linear-gradient(90deg,#ef54cd,#f2b90d);border-radius:55px;text-align:center;font-size:20px;padding:0 5px;font-weight:700}
+</style>
+    </head>
+  <body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0db39c8b0012596a26f0441cb3226966";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <script>
+    function randomNum(minNum, maxNum) {
+        switch (arguments.length) {
+        case 1:
+          return parseInt(Math.random() * minNum + 1, 10);
+          break;
+        case 2:
+          return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10);
+          break;javascript:;
+        default:
+          a
+          return 0;
+          break;
+        }
+      }
+      </script>
+    <div class="mod_hotgame"> 
+      <div class="mod-header">
+        <div class="mod-header-h3">APP免费下载</div>
+        <a href="javascript:;" class="more">
+          <span style="color:red">佳人网缠身,巨根口中含,坐莲入化境,梦醒已入魂</span></a>
+      </div>
+      <div class="container">
+        <div class="list">
+
+        <div class="item tline" onclick="window.open('https://xxb011.cc/?channelCode=ph05')">
+            <div class="left icon">
+              <img src="https://ae04.alicdn.com/kf/Hfdfcc1fcbf274fdf953fa29e9ad94fceW.png"></div>
+            <div class="middle">
+              <p class="title">甜心直播</p>
+              <p class="description">下载APP 观看美女直播抠逼</p></div>
+            <div class="right">
+              <p class="title">
+                下载<script>document.write(randomNum(100, 999));</script>万次</p>
+              <p class="platform">
+                <a href="#" class="download-btn">立即下载</a></p>
+            </div>
+          </div>
+        <div class="item tline" onclick="window.open('https://dcnrfr.cc/?channelCode=69-01-17')">
+            <div class="left icon">
+              <img src="https://ae01.alicdn.com/kf/Hee0097d22ab04dc299d742c85075167fV.png"></div>
+            <div class="middle">
+              <p class="title">69直播</p>
+              <p class="description">下载APP 观看美女直播抠逼</p></div>
+            <div class="right">
+              <p class="title">
+                下载<script>document.write(randomNum(100, 999));</script>万次</p>
+              <p class="platform">
+                <a href="#" class="download-btn">立即下载</a></p>
+            </div>
+          </div>
+        <div class="item tline" onclick="window.open('https://dhhgzo.cc/?channelCode=88P-02-76')">
+            <div class="left icon">
+              <img src="http://imgsrc.baidu.com/super/pic/item/d53f8794a4c27d1e5aa8e3d246d5ad6eddc4381e.jpg"></div>
+            <div class="middle">
+              <p class="title">88P直播</p>
+              <p class="description">下载APP 观看美女直播抠逼</p></div>
+            <div class="right">
+              <p class="title">
+                下载<script>document.write(randomNum(100, 999));</script>万次</p>
+              <p class="platform">
+                <a href="#" class="download-btn">立即下载</a></p>
+            </div>
+          </div>
+        <div class="item tline" onclick="window.open('https://dcnrfr.cc/?channelCode=69-01-17')">
+            <div class="left icon">
+              <img src="https://ae01.alicdn.com/kf/U647c439985014a01bef2b4ced2b813ceI.png"></div>
+            <div class="middle">
+              <p class="title">69直播</p>
+              <p class="description">下载APP 观看美女直播抠逼</p></div>
+            <div class="right">
+              <p class="title">
+                下载<script>document.write(randomNum(100, 999));</script>万次</p>
+              <p class="platform">
+                <a href="#" class="download-btn">立即下载</a></p>
+            </div>
+          </div>
+        <div class="item tline" onclick="window.open('https://dhhgzo.cc/?channelCode=88P-02-76')">
+            <div class="left icon">
+              <img src="https://ae04.alicdn.com/kf/H607d1768af62483e978308909bfcf874r.png"></div>
+            <div class="middle">
+              <p class="title">88P直播</p>
+              <p class="description">下载APP 观看美女直播抠逼</p></div>
+            <div class="right">
+              <p class="title">
+                下载<script>document.write(randomNum(100, 999));</script>万次</p>
+              <p class="platform">
+                <a href="#" class="download-btn">立即下载</a></p>
+            </div>
+          </div>
+        <div class="item tline" onclick="window.open('https://dsp.aff003.pro/chan-2173/aff-gjvyB')">
+            <div class="left icon">
+              <img src="https://ae03.alicdn.com/kf/H3d2ad133831d4cf7ba672734b76f3683s.png"></div>
+            <div class="middle">
+              <p class="title">91短视频</p>
+              <p class="description">海量原创视频 原创视频博主</p></div>
+            <div class="right">
+              <p class="title">
+                下载<script>document.write(randomNum(100, 999));</script>万次</p>
+              <p class="platform">
+                <a href="#" class="download-btn">立即下载</a></p>
+            </div>
+          </div>
+        <div class="item tline" onclick="window.open('https://dyvvq.com/?channel=tdy1227j4')">
+            <div class="left icon">
+              <img src="https://ae05.alicdn.com/kf/Hcac31663508b4f619caf2491d6df1b17E.png"></div>
+            <div class="middle">
+              <p class="title">抖音视频</p>
+              <p class="description">欢迎来到抖阴性世界</p></div>
+            <div class="right">
+              <p class="title">
+                下载<script>document.write(randomNum(100, 999));</script>万次</p>
+              <p class="platform">
+                <a href="#" class="download-btn">立即下载</a></p>
+            </div>
+          </div>
+        <div class="item tline" onclick="window.open('https://ceramiclamp.cc/?channelCode=Q0ZQt')">
+            <div class="left icon">
+              <img src="https://www.xinldy.top/hy.gif"></div>
+            <div class="middle">
+              <p class="title">91直播</p>
+              <p class="description">全天候大秀免费观看</p></div>
+            <div class="right">
+              <p class="title">
+                下载<script>document.write(randomNum(100, 999));</script>万次</p>
+              <p class="platform">
+                <a href="#" class="download-btn">立即下载</a></p>
+            </div>
+          </div>
+        <div class="item tline" onclick="window.open('https://wkt5bn.digital/?ch=dhzg01')">
+            <div class="left icon">
+              <img src="https://ae01.alicdn.com/kf/H7ce890ee0ce2405b8978fc6c9b0e444bg.png"></div>
+            <div class="middle">
+              <p class="title">小黄片视频</p>
+              <p class="description">看片就上小黄片</p></div>
+            <div class="right">
+              <p class="title">
+                下载<script>document.write(randomNum(100, 999));</script>万次</p>
+              <p class="platform">
+                <a href="#" class="download-btn">立即下载</a></p>
+            </div>
+          </div>
+        <div class="item tline" onclick="window.open('https://bianzhan8.com/?agent=clxxbtv0124')">
+            <div class="left icon">
+              <img src="http://imgsrc.baidu.com/super/pic/item/dbb44aed2e738bd4e5dbf1dfe48b87d6267ff962.jpg"></div>
+            <div class="middle">
+              <p class="title">逼哩逼哩</p>
+              <p class="description">专注品质为性福缔造“鲜嫩”B站</p></div>
+            <div class="right">
+              <p class="title">
+                下载<script>document.write(randomNum(100, 999));</script>万次</p>
+              <p class="platform">
+                <a href="#" class="download-btn">立即下载</a></p>
+            </div>
+          </div>
+        <div class="item tline" onclick="window.open('https://hgsacx.me/?_chan=phcpa2ll')">
+            <div class="left icon">
+              <img src="https://ae05.alicdn.com/kf/H80c8d4e0d83d4483ab9461945f39e843g.png"></div>
+            <div class="middle">
+              <p class="title">萝莉社</p>
+              <p class="description">下载APP 观看美女直播抠逼</p></div>
+            <div class="right">
+              <p class="title">
+                下载<script>document.write(randomNum(100, 999));</script>万次</p>
+              <p class="platform">
+                <a href="#" class="download-btn">立即下载</a></p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+	  <!--底漂!-->
+    <div style="padding-top: 60px">
+      <div class="bottoms" onclick="window.open('https://xxb011.cc/?channelCode=ph05')">
+        <div class="pic">
+          <img src="https://ae04.alicdn.com/kf/Hfdfcc1fcbf274fdf953fa29e9ad94fceW.png" />
+        </div>
+        <div class="text">甜心直播</div>
+        <div class="desc">宅男深夜神器</div>
+        <div class="btn">免费下载</div>
+      </div>
+    </div>
+	<!--底漂!-->
+  </body>
+</html>
